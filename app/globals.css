@@ -1,0 +1,272 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #fffbeb;
+  --foreground: #374151;
+  --card: #fefce8;
+  --card-foreground: #374151;
+  --popover: #fefce8;
+  --popover-foreground: #374151;
+  --primary: #f59e0b;
+  --primary-foreground: #ffffff;
+  --secondary: #fbbf24;
+  --secondary-foreground: #374151;
+  --muted: #fef3c7;
+  --muted-foreground: #6b7280;
+  --accent: #f59e0b;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #fde68a;
+  --input: #ffffff;
+  --ring: rgba(245, 158, 11, 0.5);
+  --chart-1: #f59e0b;
+  --chart-2: #6d4c41;
+  --chart-3: #81c784;
+  --chart-4: #f06292;
+  --chart-5: #ce93d8;
+  --radius: 0.5rem;
+  --sidebar: #fefce8;
+  --sidebar-foreground: #374151;
+  --sidebar-primary: #f59e0b;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #fbbf24;
+  --sidebar-accent-foreground: #374151;
+  --sidebar-border: #fde68a;
+  --sidebar-ring: rgba(245, 158, 11, 0.5);
+}
+
+.dark {
+  --background: #1f2937;
+  --foreground: #f9fafb;
+  --card: #374151;
+  --card-foreground: #f9fafb;
+  --popover: #374151;
+  --popover-foreground: #f9fafb;
+  --primary: #fbbf24;
+  --primary-foreground: #1f2937;
+  --secondary: #f59e0b;
+  --secondary-foreground: #1f2937;
+  --muted: #4b5563;
+  --muted-foreground: #d1d5db;
+  --accent: #fbbf24;
+  --accent-foreground: #1f2937;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #6b7280;
+  --input: #374151;
+  --ring: rgba(251, 191, 36, 0.5);
+  --chart-1: #fbbf24;
+  --chart-2: #8d6e63;
+  --chart-3: #a5d6a7;
+  --chart-4: #f48fb1;
+  --chart-5: #e1bee7;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@theme inline {
+  --font-sans: var(--font-nunito);
+  --font-serif: var(--font-poppins);
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+@layer base {
+  * {
+    @apply border-gray-200/20 outline-gray-400/50;
+  }
+  body {
+    @apply bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-100 font-sans;
+  }
+}
+
+/* Enhanced Neumorphism utility classes with banana yellow theme */
+.neomorphic {
+  box-shadow: 8px 8px 16px rgba(245, 158, 11, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.9);
+}
+
+.neomorphic-inset {
+  box-shadow: inset 4px 4px 8px rgba(245, 158, 11, 0.1), inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+}
+
+.neomorphic-hover {
+  transition: all 0.3s ease;
+}
+
+.neomorphic-hover:hover {
+  box-shadow: 12px 12px 24px rgba(245, 158, 11, 0.15), -12px -12px 24px rgba(255, 255, 255, 0.95);
+  transform: translateY(-2px);
+}
+
+/* Dark mode neumorphism adjustments */
+.dark .neomorphic {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3), -8px -8px 16px rgba(251, 191, 36, 0.05);
+}
+
+.dark .neomorphic-inset {
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.3), inset -4px -4px 8px rgba(251, 191, 36, 0.05);
+}
+
+.dark .neomorphic-hover:hover {
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.4), -12px -12px 24px rgba(251, 191, 36, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Smooth scroll animations */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+@keyframes bounce-soft {
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  40%,
+  43% {
+    transform: translate3d(0, -8px, 0);
+  }
+  70% {
+    transform: translate3d(0, -4px, 0);
+  }
+  90% {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+
+.animate-bounce-soft {
+  animation: bounce-soft 2s ease-in-out infinite;
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.6s ease-out;
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.6s ease-out;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
+    transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Hover effects for buttons and cards */
+.group:hover .group-hover\:scale-110 {
+  transform: scale(1.1);
+}
+
+.group:hover .group-hover\:rotate-90 {
+  transform: rotate(90deg);
+}
+
+.group:hover .group-hover\:rotate-12 {
+  transform: rotate(12deg);
+}
+
+.group:hover .group-hover\:bounce {
+  animation: bounce-soft 1s ease-in-out;
+}
+
+.group:hover .group-hover\:shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Stagger animation delays for grid items */
+.grid > *:nth-child(1) {
+  animation-delay: 0ms;
+}
+.grid > *:nth-child(2) {
+  animation-delay: 100ms;
+}
+.grid > *:nth-child(3) {
+  animation-delay: 200ms;
+}
+.grid > *:nth-child(4) {
+  animation-delay: 300ms;
+}
+.grid > *:nth-child(5) {
+  animation-delay: 400ms;
+}
+.grid > *:nth-child(6) {
+  animation-delay: 500ms;
+}
+
+/* Focus states for accessibility */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
