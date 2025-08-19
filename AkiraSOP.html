@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOP Akira Chips - Prosedur Operasi Standar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc; /* slate-50 */
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+    }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #e2e8f0; /* slate-200 */
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    }
+    .whatsapp-btn {
+      transition: all 0.3s ease;
+    }
+    .whatsapp-btn:hover {
+      transform: scale(1.1) rotate(5deg);
+      box-shadow: 0 10px 20px rgba(34, 197, 94, 0.4);
+    }
+    /* Custom accordion styles */
+    .accordion-item details[open] summary {
+      background-color: #fefce8; /* yellow-50 */
+    }
+    .accordion-item details summary {
+        transition: background-color 0.2s ease-in-out;
+    }
+    .accordion-item details summary:hover {
+        background-color: #f3f4f6; /* gray-100 */
+    }
+  </style>
+</head>
+<body class="text-slate-800 antialiased">
+
+  <!-- Header -->
+  <header class="hero-gradient text-white shadow-lg">
+    <div class="container mx-auto px-6 py-20 text-center">
+      <div class="inline-block bg-white/20 p-3 rounded-2xl mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-list"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
+      </div>
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">SOP Akira Chips</h1>
+      <p class="text-lg md:text-xl text-yellow-100 max-w-3xl mx-auto">
+        Panduan lengkap untuk menjaga konsistensi, kualitas, dan pertumbuhan brand Akira Chips.
+      </p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-6 py-16 md:py-24">
+    
+    <!-- Introduction -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-amber-600 mb-4">Pilar Kesuksesan Kita</h2>
+        <p class="text-slate-600 text-lg">
+            Setiap bagian dari SOP ini dirancang untuk memastikan setiap langkah yang kita ambil adalah langkah menuju keunggulan.
+        </p>
+    </div>
+
+    <!-- SOP Sections as Accordion -->
+    <div class="max-w-4xl mx-auto space-y-4">
+      
+      <!-- Accordion Item 1: Produksi -->
+      <div class="accordion-item bg-white rounded-xl shadow-md overflow-hidden">
+        <details>
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg text-slate-900">
+            <div class="flex items-center">
+              <i data-lucide="chef-hat" class="w-6 h-6 mr-4 text-amber-500"></i>
+              1. Produksi Keripik Pisang
+            </div>
+            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+          </summary>
+          <div class="p-6 border-t border-slate-200 text-slate-700 space-y-4">
+            <p class="font-medium text-slate-800">Tujuan: Menjamin kualitas rasa & higienis produk secara konsisten.</p>
+            <ul class="list-disc list-outside space-y-3 pl-5">
+              <li><span class="font-semibold text-slate-800">Bahan Baku:</span> Hanya gunakan pisang dengan tingkat kematangan optimal dari supplier terverifikasi.</li>
+              <li><span class="font-semibold text-slate-800">Proses Produksi:</span> Lakukan proses kupas, iris, dan goreng dengan minyak baru (maksimal 2x pemakaian) untuk menjaga kualitas.</li>
+              <li><span class="font-semibold text-slate-800">Penambahan Rasa:</span> Takaran bumbu presisi: 10g bubuk per 100g keripik.</li>
+              <li><span class="font-semibold text-slate-800">Pengemasan:</span> Gunakan standing pouch berlabel lengkap dengan tanggal kedaluwarsa yang jelas.</li>
+              <li><span class="font-semibold text-slate-800">Quality Control:</span> Lakukan sampling acak sebanyak 5% dari total produksi harian untuk evaluasi.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <!-- Accordion Item 2: Operasional -->
+      <div class="accordion-item bg-white rounded-xl shadow-md overflow-hidden">
+        <details>
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg text-slate-900">
+            <div class="flex items-center">
+              <i data-lucide="bar-chart-3" class="w-6 h-6 mr-4 text-amber-500"></i>
+              2. Operasional & Keuangan
+            </div>
+            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+          </summary>
+          <div class="p-6 border-t border-slate-200 text-slate-700 space-y-4">
+            <p class="font-medium text-slate-800">Tujuan: Menjaga arus produksi, stok, dan keuangan yang sehat dan terukur.</p>
+            <ul class="list-disc list-outside space-y-3 pl-5">
+              <li>Cek stok bahan baku setiap minggu dan laporkan ke tim finance untuk pengadaan.</li>
+              <li>Catat jumlah produksi harian untuk setiap varian rasa secara akurat.</li>
+              <li>Semua transaksi (pemasukan & pengeluaran) wajib dicatat di sistem Google Sheet/ERP.</li>
+              <li>Laporan penjualan mingguan menjadi bahan evaluasi utama setiap hari Senin.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <!-- Accordion Item 3: Marketing -->
+      <div class="accordion-item bg-white rounded-xl shadow-md overflow-hidden">
+        <details>
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg text-slate-900">
+            <div class="flex items-center">
+              <i data-lucide="megaphone" class="w-6 h-6 mr-4 text-amber-500"></i>
+              3. Marketing & Branding
+            </div>
+            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+          </summary>
+          <div class="p-6 border-t border-slate-200 text-slate-700 space-y-4">
+            <p class="font-medium text-slate-800">Tujuan: Meningkatkan brand awareness dan mendorong penjualan secara efektif.</p>
+            <ul class="list-disc list-outside space-y-3 pl-5">
+                <li><span class="font-semibold text-slate-800">Konten Harian:</span> Publikasi konten (foto, video, atau story) di Instagram & TikTok minimal 1x sehari.</li>
+                <li><span class="font-semibold text-slate-800">Program Promo:</span> Jalankan promo reguler seperti free ongkir radius 5KM dan Beli 4 Gratis 1 setiap akhir bulan.</li>
+                <li><span class="font-semibold text-slate-800">Konsistensi Branding:</span> Pastikan penggunaan logo, palet warna, dan tone komunikasi selalu konsisten di semua platform.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+      
+      <!-- More items... -->
+      <div class="accordion-item bg-white rounded-xl shadow-md overflow-hidden">
+        <details>
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg text-slate-900">
+            <div class="flex items-center">
+              <i data-lucide="messages-square" class="w-6 h-6 mr-4 text-amber-500"></i>
+              4. Customer Service
+            </div>
+            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+          </summary>
+          <div class="p-6 border-t border-slate-200 text-slate-700 space-y-4">
+            <p class="font-medium text-slate-800">Tujuan: Memberikan pengalaman belanja yang cepat, ramah, dan memuaskan.</p>
+            <ul class="list-disc list-outside space-y-3 pl-5">
+                <li>Respon chat WhatsApp maksimal 5 menit pada jam operasional (08:00–21:00).</li>
+                <li>Gunakan template balasan yang sudah disiapkan untuk menjaga keramahan dan kejelasan informasi.</li>
+                <li>Proses pesanan lokal untuk pengiriman di hari yang sama (same day).</li>
+                <li>Lakukan follow up untuk meminta feedback pelanggan dan kumpulkan testimoni positif.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <div class="accordion-item bg-white rounded-xl shadow-md overflow-hidden">
+        <details>
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg text-slate-900">
+            <div class="flex items-center">
+              <i data-lucide="monitor-smartphone" class="w-6 h-6 mr-4 text-amber-500"></i>
+              5. IT & Website
+            </div>
+            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+          </summary>
+          <div class="p-6 border-t border-slate-200 text-slate-700 space-y-4">
+            <p class="font-medium text-slate-800">Tujuan: Menjaga semua aset dan sistem digital berjalan optimal dan aman.</p>
+            <ul class="list-disc list-outside space-y-3 pl-5">
+                <li>Update konten atau promo di website minimal 1x per bulan.</li>
+                <li>Monitor uptime website secara berkala melalui dashboard Netlify/hosting.</li>
+                <li>Pastikan semua tombol CTA (WhatsApp & Google Maps) berfungsi dengan baik.</li>
+                <li>Lakukan backup data kontak pelanggan setiap akhir minggu.</li>
+                <li>Gunakan HTTPS untuk keamanan dan jangan pernah menyimpan data sensitif di front-end.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <div class="accordion-item bg-white rounded-xl shadow-md overflow-hidden">
+        <details>
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg text-slate-900">
+            <div class="flex items-center">
+              <i data-lucide="users-2" class="w-6 h-6 mr-4 text-amber-500"></i>
+              6. Evaluasi & Rapat Tim
+            </div>
+            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+          </summary>
+          <div class="p-6 border-t border-slate-200 text-slate-700 space-y-4">
+            <p class="font-medium text-slate-800">Tujuan: Mendorong perbaikan berkelanjutan dan inovasi melalui kolaborasi tim.</p>
+            <ul class="list-disc list-outside space-y-3 pl-5">
+                <li>Rapat mingguan untuk membahas performa penjualan dan kendala operasional.</li>
+                <li>Rapat bulanan untuk me-review strategi marketing dan merencanakan kampanye berikutnya.</li>
+                <li>Setiap ide baru dicatat dan dieksekusi dalam sistem sprint mingguan untuk agilitas.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+    
+    <!-- Output Section -->
+    <section class="mt-20 text-center">
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12 border border-amber-200">
+            <div class="inline-block bg-amber-100 text-amber-600 p-3 rounded-full mb-5">
+                <i data-lucide="target" class="w-8 h-8"></i>
+            </div>
+            <h2 class="text-3xl font-bold text-amber-600 mb-4">Output yang Diharapkan</h2>
+            <p class="text-slate-600 mb-6">Dengan menjalankan SOP ini secara disiplin, kita menargetkan hasil berikut:</p>
+            <ul class="text-left space-y-3 text-slate-700 inline-block">
+                <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-3 text-green-500 flex-shrink-0 mt-1"></i><span>Produk dengan rasa dan kualitas yang konsisten.</span></li>
+                <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-3 text-green-500 flex-shrink-0 mt-1"></i><span>Website & sosial media yang aktif dan menarik.</span></li>
+                <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-3 text-green-500 flex-shrink-0 mt-1"></i><span>Tingkat kepuasan dan repeat order pelanggan yang tinggi.</span></li>
+                <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-3 text-green-500 flex-shrink-0 mt-1"></i><span>Tim yang solid, kompak, dan memiliki arah tujuan yang jelas.</span></li>
+            </ul>
+        </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-800 text-slate-400 mt-16">
+    <div class="container mx-auto px-6 py-8 text-center">
+      <p>&copy; 2025 Akira Chips. SOP ini dibuat untuk penggunaan internal dan pengembangan brand.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a
+    href="https://wa.me/6281234567890?text=Halo%20Akira%20Chips,%20saya%20mau%20tanya%20tentang%20produknya."
+    target="_blank"
+    class="whatsapp-btn fixed bottom-6 right-6 bg-green-500 text-white px-4 py-3 rounded-full shadow-2xl hover:bg-green-600 flex items-center space-x-3"
+    aria-label="Hubungi Customer Service via WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.269.655 4.398 1.905 6.314l-.975 3.525 3.456-1.101z"/></svg>
+    <span class="font-semibold hidden sm:inline">Hubungi CS</span>
+  </a>
+
+  <script>
+    lucide.createIcons();
+
+    // Accordion logic to rotate chevron
+    document.querySelectorAll('.accordion-item details').forEach((detail) => {
+        detail.addEventListener('toggle', event => {
+            const chevron = detail.querySelector('summary > [data-lucide="chevron-down"]');
+            if (detail.open) {
+                chevron.style.transform = 'rotate(180deg)';
+            } else {
+                chevron.style.transform = 'rotate(0deg)';
+            }
+        });
+    });
+  </script>
+</body>
+</html>
